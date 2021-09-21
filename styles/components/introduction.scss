@@ -128,6 +128,10 @@
       max-width: 280px;
       padding: 60px 60px 60px 100px;
     }
+    &__text-lower {
+      max-width: 280px;
+      padding: 60px 60px 60px 100px;
+    }
   }
   .profile {
     &__picture {
@@ -139,9 +143,15 @@
 
 @media screen and (max-width: 801px) {
   .introduction {
-    flex-wrap: nowrap;
     padding-left: 10px;
+    &__container {
+      flex-wrap: nowrap;
+    }
     &__text {
+      max-width: 280px;
+      padding: 50px 40px 40px 80px;
+    }
+    &__text-lower {
       max-width: 280px;
       padding: 50px 40px 40px 80px;
     }
@@ -165,6 +175,14 @@
         max-width: 100%;
       }
     }
+    &__text-lower {
+      font-size: 12px;
+      max-width: calc(80% - 40px);
+      padding: 60px 40px 40px 20px;
+      .text__section {
+        max-width: 100%;
+      }
+    }
   }
   .profile {
     &__picture {
@@ -173,6 +191,6 @@
     }
   }
   .text__section--name {
-    font-size: 11pt !important;
+    font-size: 10pt !important;
   }
 }
