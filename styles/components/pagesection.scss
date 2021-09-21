@@ -1,0 +1,17 @@
+.page-section {
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 0 30px;
+  //   width: 100%;
+  &--main-logo {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .page-section {
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+  }
+}
