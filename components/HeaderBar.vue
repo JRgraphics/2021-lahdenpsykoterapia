@@ -17,11 +17,11 @@ export default {
     return {
       headerItem: [
         {
-          name: "intro",
+          name: "page-section--main-logo",
           label: "Esittely"
         },
         {
-          name: "therapy",
+          name: "therapies",
           label: "Terapia"
         },
         {
@@ -33,7 +33,11 @@ export default {
   },
   methods: {
     onClick(data) {
-      console.log(data);
+      try {
+        document
+          .querySelector(`#${data}`)
+          .scrollIntoView({ behavior: "smooth", block: "start" });
+      } catch (error) {}
     }
   }
 };

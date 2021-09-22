@@ -9,7 +9,7 @@
 export default {
   data() {
     return {
-      sections: ["main-logo", "introduction", "main-logo"]
+      sections: ["main-logo", "introduction", "therapies", "contact"]
     };
   }
 };

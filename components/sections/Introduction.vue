@@ -1,6 +1,6 @@
 <template>
   <div class="introduction">
-    <div v-view="viewHandler" class="introduction__container">
+    <div v-view="viewHandler" id="introduction" class="introduction__container">
       <img
         :class="['profile__picture', { 'profile__picture--show': viewStatus }]"
         :src="profilePicture"

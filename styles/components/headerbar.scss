@@ -6,6 +6,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 9;
   &__item {
     font-family: $font-montserrat;
     font-size: 25px;

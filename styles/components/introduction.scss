@@ -1,5 +1,6 @@
 .introduction {
   padding-left: 80px;
+  padding-top: 160px;
   position: relative;
   &__container {
     display: flex;
@@ -192,5 +193,14 @@
   }
   .text__section--name {
     font-size: 10pt !important;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .introduction {
+    padding-left: 10px;
+    &__text {
+      padding: 60px 10px 40px 10px;
+    }
   }
 }

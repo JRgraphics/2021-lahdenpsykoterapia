@@ -1,7 +1,12 @@
 <template>
-  <div :class="['page-section', `page-section--${name}`]">
+  <div
+    :id="`page-section--${name}`"
+    :class="['page-section', `page-section--${name}`]"
+  >
     <main-logo v-if="name === 'main-logo'" />
     <introduction v-if="name === 'introduction'" />
+    <therapies v-if="name === 'therapies'" />
+    <contact v-if="name === 'contact'" />
   </div>
 </template>
 
