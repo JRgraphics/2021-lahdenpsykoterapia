@@ -3,7 +3,7 @@ export default {
   head: {
     title: "Lahden Psykoterapia",
     htmlAttrs: {
-      lang: "en"
+      lang: "en",
     },
     meta: [
       { charset: "utf-8" },
@@ -11,11 +11,30 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "Lahden Psykoterapia palvelut"
+        content:
+          "Psykoterapia-palveluita Lahden alueella jo toista vuosikymmentä.",
       },
-      { name: "format-detection", content: "telephone=no" }
+      { name: "format-detection", content: "telephone=no" },
+      { hid: "og-type", property: "og:type", content: "website" },
+      { hid: "og-title", property: "og:title", content: "Lahden Psykoterapia" },
+      {
+        hid: "og-desc",
+        property: "og:description",
+        content:
+          "Psykoterapia-palveluita Lahden alueella jo toista vuosikymmentä.",
+      },
+      {
+        hid: "og-image",
+        property: "og:image",
+        content: "https://lahdenpsykoterapia.fi/logo.jpg",
+      },
+      {
+        hid: "og-url",
+        property: "og:url",
+        content: "https://lahdenpsykoterapia.fi",
+      },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -31,19 +50,8 @@ export default {
   buildModules: [],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    // https://go.nuxtjs.dev/bootstrap
-    "bootstrap-vue/nuxt"
-  ],
-
-  /*
-   ** Disabling Bootstrap Compiled CSS
-   */
-  bootstrapVue: {
-    bootstrapCSS: false,
-    bootstrapVueCSS: false
-  },
+  modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
 };

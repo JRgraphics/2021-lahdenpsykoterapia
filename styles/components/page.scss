@@ -1,8 +1,42 @@
 .page {
-  background-image: url("~/assets/images/bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   min-height: 100vh;
-  padding-top: 50px;
+  &__bg {
+    background-image: url("~/assets/images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+
+    /* Animation for background*/
+    animation: page-bg 35s ease-in-out infinite;
+  }
+}
+
+@keyframes page-bg {
+  0% {
+    transform: scale(1) translateX(0);
+  }
+  50% {
+    transform: scale(1.3) translateX(60px);
+  }
+  100% {
+    transform: scale(1) translateX(0);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  @keyframes page-bg {
+    0% {
+      transform: scale(1) translateX(0);
+    }
+    50% {
+      transform: scale(1.1) translateX(20px);
+    }
+    100% {
+      transform: scale(1) translateX(0);
+    }
+  }
 }

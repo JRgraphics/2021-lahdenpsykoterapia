@@ -10,8 +10,9 @@ export const introduction = {
                 Olen työskennellyt psykiatrisessa erikoissairaanhoidossa vuodesta 1988 sekä 
                 lasten-, nuorten- että aikuisten psykiatrisilla osastoilla ja poliklinikoilla. 
                 Olen myös työskennellyt päihdehuollon palveluksessa kahden vuoden ajan lisätäkseni 
-                päihdepuolen työkokemustani. Kokemuksellani tarjoan palveluina yksilöterapiaa nuorille 
-                ja aikuisille, perheterapiaa sekä vanhempienohjausta. Osallistun säännöllisesti alani koulutuksiin 
-                ja työnohjaukseen kehittääkseni edelleen ammatillista osaamistani.
-                `
+                päihdepuolen työkokemustani.
+                `,
+  section3: `Kokemuksellani tarjoan palveluina yksilöterapiaa nuorille 
+  ja aikuisille, perheterapiaa sekä vanhempienohjausta. Osallistun säännöllisesti alani koulutuksiin 
+  ja työnohjaukseen kehittääkseni edelleen ammatillista osaamistani.`,
 };
